@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+header{
+    width: 100%;
+    color: black;
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2F;
+}
+header ul{
+    list-style: none; /* Esto saca los puntos de la lista */
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px; /* Distancia entre cada elemento de la lista */
+}
+h1{
+    font-size: 68px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    font-family: "Jersey 10", sans-serif;
+    color: white;
+}               /* Hasta aca creo que voy bien :)*/
+h2{
+    background-image: url(./images/h2background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 200px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 42px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boxmain{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxmain p{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 60px;
+    max-width: 800px;
+    color: white;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+.imgmain{
+    width: 150px;
+    height: auto;
+}
+body{
+    background-image: url('images/Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    margin: 0;
+    padding: 0;
+background-color: #050505;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+ /*   
+ 
+    background-image: url('images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+    */
