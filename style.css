@@ -13,6 +13,7 @@ header ul{
     display: flex;
     flex-direction: row;
     column-gap: 15px; /* Distancia entre cada elemento de la lista */
+    color: white;
 }
 h1{
     font-size: 68px;
