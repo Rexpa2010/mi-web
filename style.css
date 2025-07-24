@@ -7,6 +7,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color: #2B2A2F;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 header ul{
     list-style: none; /* Esto saca los puntos de la lista */
@@ -14,6 +15,21 @@ header ul{
     flex-direction: row;
     column-gap: 15px; /* Distancia entre cada elemento de la lista */
     color: white;
+}
+@media (max-width: 576px) { /*el @media cambia los valores de esta caja pero en celulares*/
+  header {
+    padding: 10px 5px;
+    font-size: 10px; /* Reducir tamaño fuente en celular */
+  }
+
+  header ul {
+    gap: 10px;
+    padding: 0;
+  }
+
+  header ul li {
+    margin: 5px 0;
+  }
 }
 h1{
     font-size: 68px;
@@ -32,6 +48,14 @@ h2{
     font-family: "Jersey 10", sans-serif;
     font-size: 42px;
     color: white;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 a{
     text-decoration: none;
@@ -52,13 +76,30 @@ a{
     text-align: center;
     font-size: 24px;
     padding: 20px 60px;
-    max-width: 800px;
     color: white;
     font-family: "Bitcount Prop Single", system-ui;
+}
+
+@media (max-width: 576px) {
+  .boxmain p{
+    font-size: 0.9rem;
+  }
 }
 .imgmain{
     width: 150px;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.images-main{
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+}
+.images-main:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 body{
     background-image: url('images/Background.png');
@@ -69,11 +110,18 @@ body{
     padding: 0;
 background-color: #050505;
 }
+
 footer{
     text-align: center;
     color: white;
+    font-size: 12px;
 }
-
+@media (max-width: 576px) {
+footer{
+    font-size: 6px;
+    list-style: none;
+  }
+}
 
 
 
@@ -87,4 +135,11 @@ footer{
     background-size: cover;
     background-position: center; 
     
+
+    @media (max-width: 576px) {
+body{
+    width: 100%;
+
+    }
+}
     */

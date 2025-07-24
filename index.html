@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rexpa 3D Impresiones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +16,8 @@
             <ul>
                 <a href="./index.html"><li>HOME</li></a>
                 <a href="https://www.instagram.com/rexpa3d"><li>INSTAGRAM</li></a>
-                <li>CONTACTO</li>
-                <li>NOSOTROS</li>
+                <a href="#contact"><li>CONTACTO</li></a>
+                <a href="#nosotros"><li>NOSOTROS</li></a>
             </ul>
         </nav>
     </header>
@@ -24,9 +25,9 @@
 
     <div class="main">  
         <h1>REXPA 3D IMPRESIONES</h1>
-        <div class="boxmain">
+        <div class="boxmain container">
 
-            <img src="./images/1.png" alt="Rexpa 3D" class="imgmain">
+            <img src="./images/1.png" alt="Rexpa 3D" class="imgmain container-sm">
             <h2>Bienvenidos a REXPA 3D</h2>
                 <p>Bienvenidos a mi mundo de creación en 3D, donde la pasión por el diseño, el arte y la cultura geek se fusionan para dar vida a piezas únicas.
 
@@ -39,23 +40,32 @@
                     Gracias por apoyar el arte independiente y ser parte de este proyecto que crece día a día.</p>
         </div>
         
-        <div class="boxmain">
+        <div class="boxmain container-sm">
             <h1>TRABAJOS</h1>
-            <img src="./images/Troy 3D.png" alt="Troy 3D" class="imgmain">
+            <img src="./images/Troy 3D.png" alt="Troy 3D" class="images-main">
             <p>Un homenaje especial a mi fiel compañero, Troy. Esta figura fue modelada a partir de fotos reales, impresa en PLA y pintada a mano, cuidando cada detalle para capturar su esencia. Un ejemplo del trabajo personalizado que puedo hacer para que lleves a tu mascota siempre con vos, de una forma única y artística.</p>
         </div>
 
-        <Div class="boxmain">
-            <img src="./images/Sasuke 3D.png" alt="Sasuke 3D" class="imgmain">
+        <Div class="boxmain container-sm">
+            <img src="./images/Sasuke 3D.png" alt="Sasuke 3D" class="images-main">
             <p>Nuestro lado más geek cobra vida con esta figura de Sasuke, uno de los personajes más emblemáticos del anime. Este modelo fue impreso en 3D y pintado completamente a mano, cuidando cada detalle para reflejar su esencia y carácter. En REXPA 3D, no solo creamos objetos, sino que damos forma a pasiones y fandoms a través de cada pieza.</p>
         </Div>
 
+        <Div class="boxmain container-sm" id="nosotros">
+            <h1>NOSOTROS</h1>
+            <img src="./images/nosotros.jpeg" alt="yo" class="images-main">
+            <p>En REXPA 3D somos un equipo impulsado por la pasión por lo geek, lo artístico y lo único. Nacimos del deseo de combinar tecnología con creatividad para transformar ideas en objetos que emocionan. Nos especializamos en figuras personalizadas, fan art y piezas decorativas que cuentan historias. Cada creación refleja el cariño con el que trabajamos y el respeto por las comunidades que nos inspiran: gamers, otakus, cinéfilos, coleccionistas y amantes de los detalles. Más que un emprendimiento, somos parte de un mundo que vibra con la cultura pop y la imaginación sin límites.</p>
+        </Div>
+
     </div> 
-<footer>
-        <p>© 2025 REXPA 3D. Todos los derechos reservados.</p>
-        <p>Diseñado con pasión por el detalle.</p>
-        <p>📍 Montevideo, Uruguay | ✉️ rexpa3d.2008@gmail.com</p>
-        <p>Seguinos en <a href="https://www.instagram.com/rexpa3d" target="_blank">Instagram</a></p>
+<footer id="contact">
+        <li>Diseñado con pasión por el detalle.</li>
+        <li>📍 Montevideo, Uruguay | ✉️ rexpa3d.2008@gmail.com | WhatsApp 📱 091986642</li>
+        <li>Seguinos en <a href="https://www.instagram.com/rexpa3d" target="_blank">Instagram</a></li>
+        <li>© 2025 REXPA 3D. Todos los derechos reservados.<li></li>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
