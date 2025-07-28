@@ -40,23 +40,64 @@ h2{
     display: flex;
     align-items: center;
 }
+#carouselExampleControls{
+    margin: 40px;
+}
+.carrousel-img{
+    width: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+}
 .intro{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.img1{
-    width: 600px;
-    max-height: 400px;
-    object-fit: contain;
-    margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 2%;
-}
 .intro p{
     font-size: 20px;
     font-family: "Fredoka", sans-serif;
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul li {
+  margin: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: #1FC667;
+    border-radius: 30%;
+    width: 250px;
+    height: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1b5e20;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: #12e220;
+  text-decoration: underline;
+}
+
 h3{
     font-size: 28px;
     font-family: "Fredoka", sans-serif;
@@ -288,6 +329,9 @@ h5{
     max-width: 800px;
     margin: 0 auto;
 }
+iframe{
+    border: none;
+}
 /* Adapto el sitio para que sea responsive*/
 
 @media (max-width: 768px) {
@@ -305,6 +349,26 @@ h5{
   .logo {
     width: 60%;
     max-width: 180px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  nav ul li a {
+    line-height: 1.4;
+    flex-direction: column;
+    padding: 10px;
   }
 
   h1 {
@@ -328,7 +392,7 @@ h5{
     text-align: center;
   }
 
-  .img1 {
+  #carouselExampleControls {
     width: 90%;
     height: auto;
     margin-bottom: 20px;
@@ -371,8 +435,17 @@ h5{
     max-width: 100%;
     width: 360px;
     height: auto;
-    margin: 0 auto;
+    margin: 50px auto;
     display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+.videos-container iframe{
+
+    padding-left: 25px;
+    padding-right: 25px;
+  
   }
   .transforma ul,
   .reutiliza ol {
@@ -431,6 +504,7 @@ h5{
   .footer {
     text-align: center;
     padding: 20px;
+    font-size: 5px;
   }
 
   .footer_contenido {
